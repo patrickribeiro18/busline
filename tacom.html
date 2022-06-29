@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BusLine TACOM</title>
+    <link rel="icon" href="images/busBlue.png">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />	
+    <link rel="stylesheet" href="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.css" />
+    <link rel="stylesheet" href="css/appits.css" />
+	
+</head>
+
+<body>
+
+    <!-- Div que ficará "voando" sobre o mapa  -->
+    <div class="float">
+        <form class="ui form">
+			<select class="ui fluid search selection dropdown" name="empresa" id="empresa"></select>
+            <select class="ui fluid search selection dropdown" name="linha" id="linha"></select>
+            <select class="ui fluid search selection dropdown" name="viagem" id="viagem"></select>
+            <select class="ui fluid search selection dropdown ponto" name="ponto" id="ponto"></select>
+            <label class="ui fluid" id="detalhelinha"></label>
+            <label class="ui fluid" id="detalhedestino"></label>
+            <div id="horarios">
+                <label class="ui fluid" id="detalhehorario"></label>
+            </div>
+        </form>
+    </div>
+
+    <div id="map_canvas"></div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.js"></script>
+<script src="js/apptacom.js"></script>
+
+</html>

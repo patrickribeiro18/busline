@@ -1,0 +1,51 @@
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Horários</title>
+		<link  rel = "shortcut icon"  href = "imagens/busBlue.ico"  type = "image / x-icon" > 
+		<link  rel = "icon"  href = "imagens/busBlue.ico"  type = "image / x-icon" >
+	   
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+		<link rel="stylesheet" href="css/appgist.css" />
+	</head>
+	
+	<body>
+		<div class="ui container" id="container">
+			<div class="ui form">
+				<div class="ui grid stackable">
+					<div class="sixteen wide column">
+						<h1>Horários</h1>
+						<form>
+							<a href="index.html">
+								<input type="button" value="Home"> </a>
+						</form>
+					</div>
+					<div class="four wide column">
+						<input id="data" type="date">
+					</div>
+					<div class="five wide column">
+						<select class="ui fluid search selection dropdown" name="empresa" id="empresa"></select>
+					</div>
+					<div class="seven wide column">
+						<select class="ui fluid search selection dropdown" name="linha" id="linha"></select>
+					</div>
+				</div>
+				<div class="ui grid stackable">
+					<div id="detalheoperacional"></div>
+				</div>
+				<div class="ui grid stackable">
+					<div class="ui inverted cards" id="detalhehorario"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+	<script src="js/horarios.js"></script>
+	
+	</html>
+	
