@@ -57,7 +57,7 @@ function carregaViagens(idLinha) {
 function carregaHorarios(idViagemMigracao, date, nome){
     $.ajax({
         type: "GET",
-        url: caminhoBase2 + "forecast/lines/load/departure/" + idViagemMigracao + "/" + idEmpresa + "?date=" + date,
+        url: caminhoBase + "forecast/lines/load/departure/" + idViagemMigracao + "/" + idEmpresa + "?date=" + date,
         dataType: "JSON",
         success: function (data) {			
 			var tamanho = data[0] != null && data[0].partidas != null ? data[0].partidas.length : 0;
