@@ -141,14 +141,14 @@ function carregaTodosOsPontos() {
 //-----------------------------------------------------------------------------------
 function mudouEmpresa(idEmpresa){
 	if(idEmpresa <= 1){
-		caminhoBase = "http://msl.citgis.com.br:6060/siumobile-ws-v01/rest/ws"
+		caminhoBase = "https://msl.citgis.com.br:6060/siumobile-ws-v01/rest/ws"
 	}else 
 	if(idEmpresa == 2){
 		
 		caminhoBase = "http://sfo.citgis.com.br:6060/siumobile-ws-v01/rest/ws"
 	}else
 	if(idEmpresa == 3){
-		caminhoBase = "http://mobile-l.sitbus.com.br:6060/siumobile-ws-v01/rest/ws"
+		caminhoBase = "https://mobile-l.sitbus.com.br:6060/siumobile-ws-v01/rest/ws"
 	}else
 	if(idEmpresa == 4){
 		caminhoBase = "http://ec2-54-207-26-182.sa-east-1.compute.amazonaws.com:6060/siumobile-ws-v01/rest/ws"
