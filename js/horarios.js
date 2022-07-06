@@ -78,7 +78,7 @@ function carregaHorarios(idViagemMigracao, date, nome){
 			}else{
 				retorno = '<div class="ui fluid olive card">';
 				retorno += '<div class="content"><div class="center aligned description">';
-				retorno += "<span style='color:#b5cc18'>Não há horários para a viagem " + nome + "</span>";
+				retorno += "<span style='color:#b5cc18'>Não há horários para a viagem " + nome + idViagemMigracao +  "</span>";
 				retorno += '</div></div></div>';
 				$('#detalhehorario').append(retorno);
 			}
