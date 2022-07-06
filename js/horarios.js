@@ -68,7 +68,7 @@ function carregaHorarios(idViagemMigracao, date, nome){
 				retorno = '<div class="ui fluid teal card">';
 				retorno += '<div class="content">';
 				retorno += '<div class="center aligned header">' +"Viagem: "+ nome + '</div>';
-				retorno += '<div class="center aligned header">' + "IdViagemMigração: "+ idViagemMigracao + '</div>';
+				retorno += '<div class="center aligned header">' + "IdViagem: "+ idViagemMigracao + '</div>';
 				retorno += '<div class="center aligned description">';
 				for (let index = 0; index < tamanho; index++) {
 					retorno += data[0].partidas[index] + " ";
@@ -78,7 +78,7 @@ function carregaHorarios(idViagemMigracao, date, nome){
 			}else{
 				retorno = '<div class="ui fluid olive card">';
 				retorno += '<div class="content"><div class="center aligned description">';
-				retorno += "<span style='color:#b5cc18'>Não há horários para a viagem " + nome +" "+ idViagemMigracao +  "</span>";
+				retorno += "<span style='color:#b5cc18'>Não há horários para a viagem " + nome +" de ID "+ idViagemMigracao +  "</span>";
 				retorno += '</div></div></div>';
 				$('#detalhehorario').append(retorno);
 			}
