@@ -68,6 +68,7 @@ function carregaHorarios(idViagemMigracao, date, nome){
 				retorno = '<div class="ui fluid teal card">';
 				retorno += '<div class="content">';
 				retorno += '<div class="center aligned header">' + nome + '</div>';
+				retorno += '<div class="center aligned header">' + idViagemMigracao + '</div>';
 				retorno += '<div class="center aligned description">';
 				for (let index = 0; index < tamanho; index++) {
 					retorno += data[0].partidas[index] + " ";
